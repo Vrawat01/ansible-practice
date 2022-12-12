@@ -1,0 +1,13 @@
+-name: Variables demo
+hosts: all
+vars:
+  URL: play.google.com
+  tasks:
+  -name: printing the URL
+   ansible.buitin.debug:
+         msg: Value of URL is {{URL}}
+
+  -name: printing the URL with space 
+     ansible .builtin.debug:
+     msg: Value of URL is {{URL}}
+
